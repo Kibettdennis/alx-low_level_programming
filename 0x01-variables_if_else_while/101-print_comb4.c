@@ -1,38 +1,30 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
- * main - print three number combinations
- *
- * Return: 0 success
+ * main - Entry point
+ * Return: Always 0 (success)
  */
+
 int main(void)
+
 {
-int i = '0'
-int j = '0'
-int k = '0'
-while
+int d, p;
+for (d = '0'; d < '9'; d++)
 {
-	(i <= '7')
-	while (j < = '8')
-		while (k <= '9')
-		{
-			if (i < j && j < k)
-			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				if (!(i == '7' && j == '8' && k == '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			k++;
-		}
-k = '0';
-j++;
+for (p = d + 1; p <= '9'; p++)
+{
+if (p !=d)
+{
+putchar(d);
+putchar(p);
+if (d == '8' && p == '9')
+continue;
+putchar((');
+putchar(' ');
 }
-j = '0';
-i++;
+}
 }
 putchar('\n');
 return (0);
