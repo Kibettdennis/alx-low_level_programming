@@ -1,14 +1,21 @@
 #include <stdio.h>
+
 /**
- * main - prints alpha in upper and lower case
- * Return: always 0
+ * main - prints the alphabet in lowercase, and then in uppercase
+ * followed by a new line
+ *
+ * Return: Always 0 (Success)
  */
+
+int main(void)
 {
-char x;
-for (x = 'a'; x <= 'z'; x++)
-putchar(x);
-for (x = 'A'; cx <= 'Z'; x++)
-putchar(x);
-putchar('\n');
-return (0);
+
+	int letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
+	putchar('\n');
+	return (0);
 }
