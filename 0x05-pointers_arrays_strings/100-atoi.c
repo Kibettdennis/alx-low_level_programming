@@ -5,6 +5,8 @@
  * Return: An integer
  */
 
+int _atoi(char *s)
+
 {
 
 int c = 0;
